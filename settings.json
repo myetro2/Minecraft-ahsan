@@ -1,0 +1,55 @@
+{
+  "bot-account": {
+    "username": "Ahsan", 
+    "password": "",
+    "type": "mojang"
+  },
+
+  "server": {
+    "ip": "Anshu8822.aternos.me", 
+    "port": 24890,   
+    "version": "1.12.1"   
+  },
+  
+  "position": {
+    "enabled": false,
+    "x": 10000094.00,
+    "y": 52.00,
+    "z": 10000294.00
+  },
+
+  "utils": {
+    "auto-auth": {
+      "enabled": false,
+      "password": ""
+    },
+
+    "anti-afk": {
+      "enabled": true,
+      "sneak": true,
+      "sprint": true
+    },
+
+    "chat-messages": {
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 600,
+
+      "messages": [
+        "Hello Alina",
+        "alina khana kha liya na",
+        "alina"
+      ]
+    },
+
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-recconect-delay": 5,
+
+    "chest-transfer": {
+      "enabled": true,
+      "transfer-interval": 5000,
+      "items-per-transfer": 3
+    }
+  }
+}

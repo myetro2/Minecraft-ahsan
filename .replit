@@ -1,0 +1,18 @@
+language = "nix"
+run = "node index.js"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+
+[workflows]
+runButton = "Auto Run Bot"
+
+[[workflows.workflow]]
+name = "Auto Run Bot"
+author = 46110440
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node index.js"
