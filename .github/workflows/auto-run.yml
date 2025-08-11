@@ -3,9 +3,11 @@ name: Auto Run Bot Every 5h40m
 on:
   schedule:
     # Har 5h40m ke interval ka cron (poore din repeat hoga)
-    - cron: "0 0,5,11,16,22 * * *"
-    - cron: "40 5,11,17,22,4 * * *"
-
+    - cron: '0 0 * * *'
+    - cron: '50 5 * * *'
+    - cron: '40 11 * * *'
+    - cron: '30 17 * * *'
+    - cron: '20 23 * * *'
 jobs:
   run-bot:
     runs-on: ubuntu-latest
