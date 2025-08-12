@@ -1,1 +1,29 @@
+name: Auto Run Bot Every 6h
 
+on:
+  schedule:
+    - cron: '0 0,6,12,18 * * *'  # Har 6 ghante exact time par
+  workflow_dispatch: # Manual run option
+
+concurrency:
+  group: autobot
+  cancel-in-progress: false  # Agar ek run chal raha hai to dusra skip ho jaayega
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start bot
+      run: npm start
