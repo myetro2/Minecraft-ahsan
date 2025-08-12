@@ -1,0 +1,27 @@
+name: Every 6 hours workflow
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Har 6 ghante run hoga
+  workflow_dispatch:        # Optional: manual run ka option bhi rahe
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start bot
+        run: |
+          echo "Bot starting..."
+          node index.js
