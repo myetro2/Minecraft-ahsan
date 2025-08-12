@@ -4,10 +4,9 @@ on:
   schedule:
     # Har 5h40m ke interval ka cron (poore din repeat hoga)
     - cron: '0 0 * * *'
-    - cron: '50 5 * * *'
-    - cron: '40 11 * * *'
-    - cron: '30 17 * * *'
-    - cron: '20 23 * * *'
+    - cron: '0 6 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 18 * * *'
 jobs:
   run-bot:
     runs-on: ubuntu-latest
