@@ -1,4 +1,4 @@
-name: Auto Run Bot Every 6h
+name: 6Auto Run Bot Every 6h
 
 on:
   schedule:
