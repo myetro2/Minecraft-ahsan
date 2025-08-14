@@ -1,7 +1,7 @@
 name: Ahsa 6 hours workflow
 
 on:
-  schedule:
+  1schedule:
     - cron: "0 */6 * * *"  # Har 6 ghante run hoga
   workflow_dispatch:        # Optional: manual run ka option bhi rahe
 
