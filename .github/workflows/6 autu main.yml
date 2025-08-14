@@ -1,7 +1,7 @@
 name: 6Auto Run Bot Every 6h
 
 on:
-  schedule:
+  1schedule:
     - cron: '0 0,6,12,18 * * *'  # Har 6 ghante exact time par
   workflow_dispatch: # Manual run option
 
