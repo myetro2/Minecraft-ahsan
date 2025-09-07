@@ -1,6 +1,6 @@
-name: time 21
+name: time 21 1
 on:
-  schedule:
+  1schedule:
     # Har 5h40m ke interval ka cron (poore din repeat hoga)
     - cron: '0 21 * * *'
 jobs:
