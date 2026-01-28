@@ -1,7 +1,7 @@
 name: Auto Run Bot Every 5h40m
 
 on:
-  1schedule:
+  schedule:
     # Har 5h40m ke interval ka cron (poore din repeat hoga)
     - cron: "0 0,5,11,16,22 * * *"
     - cron: "40 5,11,17,22,4 * * *"
